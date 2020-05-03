@@ -16,16 +16,13 @@ COMP00XY\\ %% Code and course name
 }
 
 \date{\today} %% Change "\today" by another date manually
-%% -----------------------------
-%% -----------------------------
-
 %% %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \setlength{\droptitle}{-5em}    
 \maketitle
 
 % %%%%%%%%%%%%%%%%%%%
-\section*{Question 1}
+\section*{Section 1}
 {\bfseries You can write the questions here \ldots}
 
 And your answers here \ldots
@@ -36,62 +33,8 @@ And your answers here \ldots
 
 And again, your answers here \ldots
 
-% %%%%%%%%%%%%%%%%%%%
-\section*{Mathematical notation}
-
-This template offers a set of customized mathematical symbols commonly used in FRED courses.
-
-\begin{multicols}{2}
-You can invoke the following symbols:
-\begin{Verbatim}[frame=single, fontsize=\footnotesize]
-\E(\cdot)             % Expectation
-\V(\cdot)             % Variance
-\Var(\cdot)           % Variance
-\Cov(\cdot)           % Covariance
-\Corr(\cdot)          % Correlation
-\tr(\cdot)            % Trace
-\rank(\cdot)          % Rank
-\N(0,1)               % Normal
-\op(\cdot)            % "little o" ope
-\Op(\cdot)            % "big o" operator
-\R^+                  % Real positive num
-\La(y|\beta,\sigma^2) % Lagrange function
-\end{Verbatim}
-\footnotesize{
-\begin{itemize}  \setlength\itemsep{0em}
-    \item $\E(\cdot)$
-    \item $\V(\cdot)$
-    \item $\Var(\cdot)$
-    \item $\Cov(\cdot)$
-    \item $\Corr(\cdot)$
-    \item $\tr(\cdot)$
-    \item $\rank(\cdot)$
-    \item $\N(0,1)$
-    \item $\op(\cdot)$
-    \item $\Op(\cdot)$
-    \item $\R^{+}$
-    \item $\La(y|\beta,\sigma^2)$
-\end{itemize}}
-\end{multicols}
-
-Remember, these symbols have to be implemented into equation  environments, that means, with dollar symbols \$\ldots\$, or \texttt{equation}-environments.
-
-\newpage 
-
-
-
-% %%%%%%%%%%%%%%%%%%%
-\section*{Code and scripts}
-
-If you want to print the raw outcomes from any software, it is recommended the \texttt{Verbatim}-environment :
-%% Verbatim -----------------
-\begin{Verbatim}[frame = single, fontsize = \footnotesize]
-ev = ev1 ~ ev2;
-ev1 = sumc(ev[.,nest1]');
-ev2 = sumc(ev[.,nest2]');
-num = (ev1 .^ (k[1]-1)).*sumc(depm[.,nest1]') + (ev2 .^ (k[2]-1)).*sumc(depm[.,nest2]');
-p = sumc((ev .* depm)').* num ./ ((ev1.^k[1])+(ev2.^k[2]));
-\end{Verbatim}
-%% Verbatim -----------------
+\nocite{*}
+\bibliographystyle{unsrtnat}
+% \bibliography{references}
 
 \end{document}
