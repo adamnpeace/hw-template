@@ -1,0 +1,47 @@
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{makecell}
+
+\usepackage{siunitx}
+\usepackage{blkarray} % show matrices with letters at borders
+\usepackage{hyperref}
+\usepackage{soul}
+\usepackage{titling} % drop vertical space before the title
+
+% Begin code declaration
+\usepackage{listings}
+\usepackage{color}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+}
+\sethlcolor{lightgray}
+% End code declaration
+
+% Set some distances
+\setlength{\droptitle}{-5em}    
+\setlength\parindent{0pt}
+\setlength{\parskip}{0.8em}
+
+% Set graphics up
+\usepackage[pdftex]{graphicx}
+\graphicspath{{./images/}}
+
+% Set Verbatim settings
+\usepackage{fancyvrb} % size font inside verbatim environment
+\newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
